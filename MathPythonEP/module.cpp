@@ -36,6 +36,9 @@ static PyObject* show_matrix_py(PyObject* /* unused module reference */, PyObjec
 	}
 
 	show_matrix(row, column, value);
+
+	Py_INCREF(Py_None);
+	return Py_None;
 }
 
 static PyMethodDef mathpythonep_methods[] = {
